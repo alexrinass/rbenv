@@ -9,7 +9,6 @@ tools that do one thing well.
 ### rbenv _does…_
 
 * Let you **change the global Ruby version** on a per-user basis.
-* Provide support for **per-project Ruby versions**.
 * Allow you to **override the Ruby version** with an environment
   variable.
 
@@ -122,21 +121,6 @@ when installing a gem that provides a binary).
 Like `git`, the `rbenv` command delegates to subcommands based on its
 first argument. The most common subcommands are:
 
-### <a name="section_3.1"></a> 3.1 global
-
-Sets the global version of Ruby to be used in all shells by writing
-the version name to the `~/.rbenv/global` file. This version can be
-overridden by a per-project `.rbenv-version` file, or by setting the
-`RBENV_VERSION` environment variable.
-
-    $ rbenv global 1.9.2-p290
-
-The special version name `system` tells rbenv to use the system Ruby
-(detected by searching your `$PATH`).
-
-When run without a version number, `rbenv global` reports the
-currently configured global version.
-
 ### <a name="section_3.2"></a> 3.2 local
 
 Sets a local per-project Ruby version by writing the version name to
@@ -186,6 +170,21 @@ and easy to understand, even if you're not a shell hacker.
 
 Please feel free to submit pull requests and file bugs on the [issue
 tracker](https://github.com/sstephenson/rbenv/issues).
+
+### <a name="section_3.1"></a> 3.1 global
+
+Sets the global version of Ruby to be used in all shells by writing
+the version name to the `~/.rbenv/global` file. This version can be
+overridden by a per-project `.rbenv-version` file, or by setting the
+`RBENV_VERSION` environment variable.
+
+    $ rbenv global 1.9.2-p290
+
+The special version name `system` tells rbenv to use the system Ruby
+(detected by searching your `$PATH`).
+
+When run without a version number, `rbenv global` reports the
+currently configured global version.
 
 ### <a name="section_4.1"></a> 4.1 License
 
