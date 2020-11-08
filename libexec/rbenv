@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#Add a comment
 set -e
 
 resolve_link() {
