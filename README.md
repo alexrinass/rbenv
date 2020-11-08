@@ -210,3 +210,18 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### <a name="section_3.1"></a> 3.1 global
+
+Sets the global version of Ruby to be used in all shells by writing
+the version name to the `~/.rbenv/global` file. This version can be
+overridden by a per-project `.rbenv-version` file, or by setting the
+`RBENV_VERSION` environment variable.
+
+    $ rbenv global 1.9.2-p290
+
+The special version name `system` tells rbenv to use the system Ruby
+(detected by searching your `$PATH`).
+
+When run without a version number, `rbenv global` reports the
+currently configured global version.
